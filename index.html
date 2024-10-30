@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord link redirect page</title>
+    <title>数秒後にDiscordへ</title>
     <style>
-        body {
+                body {
             background-color: #5865F2; /* Discordの紫色 */
             color: white;
             text-align: center;
@@ -19,8 +19,10 @@
 
         a {
             color: white;
-            text-decoration: none;
-            font-size: 2rem;
+            text-decoration: no   
+ne;
+            font-siz   
+e: 2rem;
             padding: 1rem 2rem;
             border-radius: 5px;
             background-color: #7289DA; /* Discordのボタン色 */
@@ -33,6 +35,17 @@
     </style>
 </head>
 <body>
-    <a href="https://discord.gg/askr6RJkhY">Go to the Discord server</a>
+    <p>Discordサーバーへようこそ！<br>
+       数秒後に自動で移動します。</p>
+
+    <script>
+        // リダイレクトまでの秒数（この場合は5秒）
+        const delay = 5;
+
+        // 指定した秒数後にリダイレクト
+        setTimeout(() => {
+            window.location.href = "https://discord.gg/askr6RJkhY";
+        }, delay * 1000);
+    </script>
 </body>
 </html>
